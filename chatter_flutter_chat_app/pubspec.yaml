@@ -40,6 +40,13 @@ dependencies:
   cached_network_image: ^3.2.2
   faker: ^2.0.0
   jiffy: ^5.0.0
+  stream_chat_flutter_core: ^5.0.0
+  logger: ^1.1.0
+  meta: ^1.8.0
+  firebase_core: ^1.24.0
+  firebase_auth: ^3.11.2
+  cloud_functions: ^3.3.9
+  collection: ^1.16.0
 
 dev_dependencies:
   flutter_test:

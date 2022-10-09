@@ -1,13 +1,14 @@
-import 'package:chatter_flutter_chat_app/themes.dart';
+import 'package:chatter_flutter_chat_app/theme.dart';
 import 'package:flutter/material.dart';
 
 class GlowingActionButton extends StatelessWidget {
-  const GlowingActionButton(
-      {super.key,
-      required this.color,
-      required this.icon,
-      this.size = 54,
-      required this.onPressed});
+  const GlowingActionButton({
+    Key? key,
+    required this.color,
+    required this.icon,
+    this.size = 54,
+    required this.onPressed,
+  }) : super(key: key);
 
   final Color color;
   final IconData icon;
@@ -23,7 +24,7 @@ class GlowingActionButton extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: color.withOpacity(0.3),
-            spreadRadius: 10,
+            spreadRadius: 8,
             blurRadius: 24,
           ),
         ],

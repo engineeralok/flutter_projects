@@ -1,8 +1,12 @@
+import 'package:chatter_flutter_chat_app/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:chatter_flutter_chat_app/themes.dart';
 
 class IconBackground extends StatelessWidget {
-  const IconBackground({super.key, required this.icon, required this.onTap});
+  const IconBackground({
+    Key? key,
+    required this.icon,
+    required this.onTap,
+  }) : super(key: key);
 
   final IconData icon;
   final VoidCallback onTap;
@@ -14,13 +18,13 @@ class IconBackground extends StatelessWidget {
       borderRadius: BorderRadius.circular(6),
       child: InkWell(
         borderRadius: BorderRadius.circular(6),
-        splashColor: AppColors.secondry,
+        splashColor: AppColors.secondary,
         onTap: onTap,
         child: Padding(
           padding: const EdgeInsets.all(6),
           child: Icon(
             icon,
-            size: 18,
+            size: 22,
           ),
         ),
       ),
@@ -30,10 +34,10 @@ class IconBackground extends StatelessWidget {
 
 class IconBorder extends StatelessWidget {
   const IconBorder({
-    super.key,
+    Key? key,
     required this.icon,
     required this.onTap,
-  });
+  }) : super(key: key);
 
   final IconData icon;
   final VoidCallback onTap;
@@ -42,7 +46,7 @@ class IconBorder extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(6),
-      splashColor: AppColors.secondry,
+      splashColor: AppColors.secondary,
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
@@ -56,7 +60,7 @@ class IconBorder extends StatelessWidget {
           padding: const EdgeInsets.all(4),
           child: Icon(
             icon,
-            size: 16,
+            size: 22,
           ),
         ),
       ),
